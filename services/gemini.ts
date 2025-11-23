@@ -63,7 +63,7 @@ export const analyzeDefinition = async (definition: string): Promise<string> => 
   try {
     const response = await ai.models.generateContent({
       model: modelId,
-      contents: `Jako profesor psychometrii, krótko (max 2 zdania) oceń definicję konstruktu: "${definition}". Czy jest wystarczająco operacyjna?`,
+      contents: `Jako profesor psychometrii, krótko (max 3 zdania) oceń definicję konstruktu: "${definition}". Czy jest wystarczająco operacyjna? Jeśli nie, to co należałoby poprawić?`,
     });
     return response.text || "Definicja wydaje się poprawna.";
   } catch (e) {
