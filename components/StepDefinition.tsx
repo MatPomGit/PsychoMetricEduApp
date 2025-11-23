@@ -25,43 +25,43 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
   const handleSuggest = () => {
     const examples = [
       {
-        name: "Wypalenie Zawodowe (Burnout)",
+        name: "Wypalenie (burnout)",
         description: "Stan fizycznego, emocjonalnego i psychicznego wyczerpania spowodowany długotrwałym stresem w miejscu pracy. Objawia się cynizmem, poczuciem braku skuteczności i dystansowaniem się od obowiązków."
       },
       {
-        name: "Lęk Społeczny",
+        name: "Lęk społeczny",
         description: "Uporczywy strach przed sytuacjami społecznymi, w których jednostka jest wystawiona na ocenę innych. Obejmuje obawę przed byciem skrytykowanym, ośmieszonym lub odrzuconym."
       },
       {
-        name: "Inteligencja Emocjonalna",
+        name: "Inteligencja emocjonalna",
         description: "Zdolność do rozpoznawania, rozumienia i zarządzania własnymi emocjami oraz emocjami innych ludzi. Obejmuje empatię, samoregulację i umiejętności społeczne."
       },
       {
-        name: "Prokrastynacja Akademicka",
+        name: "Prokrastynacja",
         description: "Tendencja do irracjonalnego odkładania zadań związanych z nauką na później, mimo świadomości negatywnych konsekwencji. Często powiązana z lękiem przed porażką i perfekcjonizmem."
       },
       {
-        name: "Satysfakcja z Życia",
+        name: "Satysfakcja z życia",
         description: "Globalna ocena jakości własnego życia dokonywana przez jednostkę na podstawie jej własnych kryteriów. Jest to poznawczy aspekt dobrostanu subiektywnego."
       },
       {
-        name: "Ekstrawersja (Wielka Piątka)",
+        name: "Ekstrawersja (wielka piątka)",
         description: "Tendencja do kierowania uwagi na zewnątrz, poszukiwania stymulacji i towarzystwa innych ludzi. Osoby o wysokim nasileniu są energiczne, towarzyskie i asertywne."
       },
       {
-        name: "Neurotyczność (Wielka Piątka)",
+        name: "Neurotyczność (wielka piątka)",
         description: "Skłonność do doświadczania negatywnych emocji, takich jak lęk, gniew, smutek czy poczucie winy. Wiąże się z niską odpornością na stres i labilnością emocjonalną."
       },
       {
-        name: "Sumienność (Wielka Piątka)",
+        name: "Sumienność (wielka piątka)",
         description: "Cecha opisująca stopień zorganizowania, wytrwałości i motywacji w dążeniu do celu. Osoby sumienne są obowiązkowe, dokładne i zdyscyplinowane."
       },
       {
-        name: "Ugodowość (Wielka Piątka)",
+        name: "Ugodowość (wielka piątka)",
         description: "Nastawienie prospołeczne, cechujące się altruizmem, zaufaniem do innych i skłonnością do współpracy. Osoby ugodowe są życzliwe i unikają konfliktów."
       },
       {
-        name: "Otwartość na doświadczenie (Wielka Piątka)",
+        name: "Otwartość na doświadczenie (wielka piątka)",
         description: "Ciekawość intelektualna, kreatywność i wrażliwość estetyczna. Osoby otwarte poszukują nowych doznań, są tolerancyjne i mają bogatą wyobraźnię."
       },
       {
@@ -69,19 +69,19 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
         description: "Sytuacyjny lęk odczuwany przed lub w trakcie sytuacji oceniania (np. egzaminów), objawiający się reakcjami fizjologicznymi, chaosem myślowym i chęcią ucieczki."
       },
       {
-        name: "Makiawelizm (Ciemna Triada)",
+        name: "Makiawelizm (ciemna triada)",
         description: "Cechuje się cynicznym podejściem do moralności, koncentracją na własnym interesie i skłonnością do manipulowania innymi w celu osiągnięcia osobistych korzyści."
       },
       {
-        name: "Narcyzm (Ciemna Triada)",
+        name: "Narcyzm (ciemna triada)",
         description: "Poczucie wyższości, roszczeniowość, potrzeba bycia podziwianym i brak empatii. Osoby narcystyczne często przeceniają swoje kompetencje."
       },
       {
-        name: "Psychopatia (Ciemna Triada)",
+        name: "Psychopatia (ciemna triada)",
         description: "Deficyt lęku i empatii, impulsywność, poszukiwanie mocnych wrażeń oraz zachowania antyspołeczne. Chłód emocjonalny."
       },
       {
-        name: "Poczucie Własnej Skuteczności (Self-Efficacy)",
+        name: "Poczucie Własnej Skuteczności (self-efficacy)",
         description: "Przekonanie jednostki o jej zdolności do zmobilizowania motywacji, zasobów poznawczych i działań niezbędnych do sprostania wymogom sytuacji."
       },
       {
@@ -105,7 +105,7 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
         description: "Tendencja do zachowań mających na celu wyrządzenie szkody innym osobom lub przedmiotom. Może być fizyczna, werbalna, bierna lub pośrednia."
       },
       {
-        name: "Prężność Psychiczna (Resilience)",
+        name: "Prężność psychiczna (resilience)",
         description: "Zdolność do skutecznego radzenia sobie z przeciwnościami losu, traumą i silnym stresem, oraz powrotu do równowagi psychicznej."
       },
       {
@@ -113,16 +113,20 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
         description: "Wewnętrzny przymus pracy, nieustanne myślenie o obowiązkach zawodowych i praca ponad wymagania, często kosztem zdrowia i relacji społecznych."
       },
       {
-        name: "Zaufanie Organizacyjne",
+        name: "Zaufanie organizacyjne",
         description: "Pozytywne oczekiwania pracownika wobec intencji i zachowań pracodawcy oraz współpracowników, wiążące się z poczuciem bezpieczeństwa."
       },
       {
-        name: "Lęk przed Porażką (Atychifobia)",
+        name: "Lęk przed porażką (atychifobia)",
         description: "Irracjonalny i uporczywy lęk przed niepowodzeniem, który paraliżuje działanie i powstrzymuje przed podejmowaniem wyzwań."
       },
       {
-        name: "Wdzięczność (Jako Cecha)",
+        name: "Wdzięczność",
         description: "Stała tendencja do dostrzegania i doceniania pozytywnych aspektów życia oraz dobra otrzymywanego od innych ludzi."
+      },
+      {
+        name: "Bycie jak Baśka",
+        description: "tendencja do ... i ... aspektów oraz ... do ..., a także ..., czy ...."
       }
     ];
 
@@ -136,7 +140,7 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
       <div className="bg-indigo-50 p-6 rounded-xl border border-indigo-100 relative overflow-hidden">
         <div className="relative z-10">
             <h2 className="text-2xl font-bold text-indigo-900 mb-2 flex items-center gap-2">
-                <Microscope className="text-indigo-600"/> Krok 1: Definicja Konstruktu
+                <Microscope className="text-indigo-600"/> Krok 1: Definicja konstruktu
             </h2>
             <p className="text-indigo-700 max-w-2xl">
               Fundamentem każdego testu jest teoria. Zanim zadasz pierwsze pytanie, musisz precyzyjnie określić, co chcesz zmierzyć. Konstrukt latentny (ukryty) to cecha, której nie widać gołym okiem (np. inteligencja, lęk), ale można ją wnioskować z zachowania.
@@ -151,7 +155,7 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
         <div className="space-y-4">
           <div>
             <div className="flex justify-between items-center mb-1">
-              <label className="block text-sm font-medium text-slate-700">Nazwa Konstruktu</label>
+              <label className="block text-sm font-medium text-slate-700">Nazwa konstruktu</label>
               <button
                 onClick={handleSuggest}
                 className="text-xs flex items-center gap-1 text-indigo-600 hover:text-indigo-800 font-medium transition-colors bg-indigo-50 px-2 py-1 rounded-md border border-indigo-100 hover:bg-indigo-100"
@@ -169,7 +173,7 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-1">Definicja Operacyjna</label>
+            <label className="block text-sm font-medium text-slate-700 mb-1">Definicja operacyjna</label>
             <textarea
               value={data.description}
               onChange={(e) => onUpdate({ ...data, description: e.target.value })}
@@ -180,7 +184,7 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
           </div>
           
           <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 text-xs text-slate-600 space-y-2">
-             <strong className="flex items-center gap-1 text-slate-800"><BookOpen size={14}/> Teoria w Pigułce: Operacjonalizacja</strong>
+             <strong className="flex items-center gap-1 text-slate-800"><BookOpen size={14}/> Teoria w pigułce: Operacjonalizacja</strong>
              <p>
                To proces tłumaczenia abstrakcyjnych pojęć na mierzalne wskaźniki. Nie możesz zmierzyć "gniewu" bezpośrednio termometrem. Musisz go zoperacjonalizować jako: "zaciskanie pięści", "podniesiony głos", "przyspieszone tętno". Twoja definicja powyżej to instrukcja dla generowania pytań.
              </p>
@@ -192,7 +196,7 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
             className="flex items-center gap-2 text-sm text-indigo-600 font-medium hover:text-indigo-800 disabled:opacity-50 mt-2"
           >
             {loading ? <Loader2 className="animate-spin" size={16} /> : <Lightbulb size={16} />}
-            Poproś AI o ocenę definicji (Eksperta)
+            Poproś o ocenę definicji (Eksperta)
           </button>
         </div>
 
@@ -219,7 +223,7 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
           disabled={!data.name || !data.description}
           className="flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg hover:-translate-y-0.5"
         >
-          Dalej: Generowanie Puli Pytań <ArrowRight size={20} />
+          Dalej: "generowanie pytań" <ArrowRight size={20} />
         </button>
       </div>
     </div>

@@ -462,7 +462,7 @@ const StepSimulation: React.FC<Props> = ({ items, onAnalysisComplete, onNext, on
             disabled={!lastResult || isSimulating}
             className="flex items-center gap-2 px-8 py-3 bg-indigo-600 text-white rounded-lg font-bold hover:bg-indigo-700 shadow-lg hover:shadow-indigo-200 transition disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none"
           >
-            Przejdź do Analizy Wyników <ArrowRight size={20} />
+            "Przejdź do analizy wyników" <ArrowRight size={20} />
           </button>
       </div>
     </div>

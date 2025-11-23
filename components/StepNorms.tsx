@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SimulationResult } from '../types';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine, CartesianGrid, ReferenceArea } from 'recharts';
 import { RefreshCw, Scale, Ruler, Sliders, Activity, GraduationCap, ShieldAlert, Target, Printer, FileText } from 'lucide-react';
@@ -94,6 +94,7 @@ const StepNorms: React.FC<Props> = ({ results, onReset }) => {
     setTargetScale(newScale);
     setIsAnimating(true);
 
+    // Smooth transition delay
     setTimeout(() => {
         setVisibleScale(newScale);
         setIsAnimating(false);
@@ -430,7 +431,6 @@ const StepNorms: React.FC<Props> = ({ results, onReset }) => {
                         fontWeight: 'bold',
                         fontSize: 12,
                       }} 
-                      isFront={true}
                    />
                  </AreaChart>
                </ResponsiveContainer>

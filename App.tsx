@@ -149,8 +149,8 @@ const App: React.FC = () => {
 
       <footer className="bg-slate-800 text-slate-400 py-6 mt-auto">
         <div className="max-w-5xl mx-auto px-4 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} PsychoMetric. Narzędzie edukacyjne.</p>
-          <p className="text-xs mt-1 opacity-60">2025. v1.1. MatPom</p>
+          <p>&copy; {new Date().getFullYear()} PsychoMetric. "Narzędzie edukacyjne".</p>
+          <p className="text-xs mt-1 opacity-60"> v1.21. MatPom</p>
         </div>
       </footer>
     </div>

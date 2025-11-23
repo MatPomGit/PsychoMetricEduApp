@@ -10,13 +10,13 @@ const Header: React.FC = () => {
             <BrainCircuit size={24} />
           </div>
           <div>
-            <h1 className="text-xl font-bold text-slate-800">PsychoMetric Wiz</h1>
-            <p className="text-xs text-slate-500">Laboratorium Konstrukcji Testów</p>
+            <h1 className="text-xl font-bold text-slate-800">PsychoMetric</h1>
+            <p className="text-xs text-slate-500">Panel konstrukcji testow</p>
           </div>
         </div>
         <div className="hidden md:block">
           <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">
-            Wersja Edukacyjna
+            Wersja edukacyjna
           </span>
         </div>
       </div>

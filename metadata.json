@@ -1,5 +1,5 @@
 {
-  "name": "PsychoMetricApp",
-  "description": "Interaktywna wizualizacja procesu tworzenia testów psychometrycznych dla studentów psychologii i nauk społecznych.",
+  "name": "PsychoMetricEduApp",
+  "description": "Interaktywna wizualizacja procesu tworzenia testów psychometrycznych dla studentów psychologii.",
   "requestFramePermissions": []
 }

@@ -13,7 +13,7 @@ const TutorialOverlay: React.FC<Props> = ({ step, onClose }) => {
       // Definition
       title: "1. Definicja Konstruktu",
       text: "Psychometria zaczyna się od teorii. Musisz zdefiniować 'co mierzymy'. Dobra definicja operacyjna pozwala przejść od abstrakcji (np. 'lęk') do konkretnych zachowań.",
-      proTip: "Unikaj definicji kołowych (tautologii). Nie definiuj lęku jako 'odczuwanie lęku', ale wskaż konkretne objawy: przyspieszone bicie serca, gonitwa myśli, unikanie kontaktu wzrokowego.",
+      proTip: "Unikaj definicji kołowych (tautologii). Nie definiuj lęku jako 'odczuwanie lęku', ale wskaż konkretne objawy: przyspieszone bicie serca, gonitwa myśli, unikanie kontaktu wzrokowego. Nie bądź jak Baśka.",
       icon: <Brain size={48} className="text-indigo-500" />,
       color: "bg-indigo-50 border-indigo-100"
     },
@@ -82,7 +82,7 @@ const TutorialOverlay: React.FC<Props> = ({ step, onClose }) => {
              </div>
             <div className="relative z-10">
                 <p className="text-xs font-bold text-yellow-600 uppercase mb-1 flex items-center gap-1">
-                    <Zap size={12} /> Pro Tip Psychometryczny
+                    <Zap size={12} /> Pro Tip psychometryczny
                 </p>
                 <p className="text-sm text-yellow-800 italic leading-snug">"{current.proTip}"</p>
             </div>
@@ -92,7 +92,7 @@ const TutorialOverlay: React.FC<Props> = ({ step, onClose }) => {
             onClick={onClose}
             className="group relative inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white transition-all duration-200 bg-indigo-600 rounded-full hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 w-full"
           >
-            <span>Rozumiem, działamy!</span>
+            <span>OK, no to zaczynymy!</span>
             <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>

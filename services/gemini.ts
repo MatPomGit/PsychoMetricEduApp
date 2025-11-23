@@ -2,7 +2,9 @@ import { GoogleGenAI, Type } from "@google/genai";
 
 // Initialize Gemini Client
 // Note: In a production environment, keys should be handled via a secure backend proxy.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: "AIzaSyCo7sKaD3AUr5eUlrT5y1k2b2OXNXnCgVg"});
+
 const modelId = "gemini-2.5-flash";
 
 export const generatePsychometricItems = async (
@@ -12,7 +14,7 @@ export const generatePsychometricItems = async (
 ): Promise<{ text: string; type: 'positive' | 'negative'; reason: string }[]> => {
   
   const prompt = `
-    Jesteś ekspertem psychometrii. Twoim zadaniem jest stworzenie pozycji testowych (pytań) do kwestionariusza mierzącego konstrukt: "${constructName}".
+    Jesteś doświadczonym ekspertem psychometrii. Twoim zadaniem jest stworzenie pozycji testowych (pytań) do kwestionariusza mierzącego konstrukt: "${constructName}".
     Opis konstruktu: "${constructDescription}".
     
     Wygeneruj 5 unikalnych pozycji testowych (items) w skali Likerta.
@@ -63,10 +65,10 @@ export const analyzeDefinition = async (definition: string): Promise<string> => 
   try {
     const response = await ai.models.generateContent({
       model: modelId,
-      contents: `Jako profesor psychometrii, krótko (max 3 zdania) oceń definicję konstruktu: "${definition}". Czy jest wystarczająco operacyjna? Jeśli nie, to co należałoby poprawić?`,
+      contents: `Jako profesor psychometrii, krótko (max 3 zdania) oceń definicję konstruktu: "${definition}". Czy jest wystarczająco operacyjna? Jak można by ją poprawić?`,
     });
     return response.text || "Definicja wydaje się poprawna.";
   } catch (e) {
-    return "Nie udało się pobrać opinii AI.";
+    return "Nie udało się pobrać opinii :(";
   }
 };

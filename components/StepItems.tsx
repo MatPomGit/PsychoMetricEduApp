@@ -270,7 +270,7 @@ const StepItems: React.FC<Props> = ({ construct, items, setItems, onNext, onBack
           disabled={items.length < 3 || !!editingId}
           className="flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-indigo-200"
         >
-          Dalej: Symulacja Badania <ArrowRight size={20} />
+          Dalej: Symulacja badania <ArrowRight size={20} />
         </button>
       </div>
     </div>

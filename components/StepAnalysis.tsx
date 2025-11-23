@@ -290,7 +290,7 @@ const StepAnalysis: React.FC<Props> = ({ results, items, onItemsUpdate, onReset,
           <div className="col-span-2 bg-blue-50 p-4 rounded-xl border border-blue-100 flex gap-3">
              <GraduationCap className="text-blue-500 shrink-0" size={24} />
              <div className="text-xs text-blue-800 space-y-1">
-                <strong>Akademia Psychometrii: Co to jest Rzetelność?</strong>
+                <strong>Akademia psychometrii: Co to jest Rzetelność?</strong>
                 <p className="opacity-80">
                   Wyobraź sobie wagę łazienkową. Jeśli wchodzisz na nią 3 razy i pokazuje 70kg, 75kg, 68kg - jest nierzetelna. Rzetelność to powtarzalność pomiaru.
                 </p>
@@ -307,7 +307,7 @@ const StepAnalysis: React.FC<Props> = ({ results, items, onItemsUpdate, onReset,
       <section className="border-t border-slate-200 pt-8">
         <div className="flex items-center gap-2 mb-4">
              <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
-               2. Ocena Kliniczna i Trafność Kryterialna <Stethoscope size={20} className="text-rose-500" />
+               2. Ocena kliniczna i Trafność kryterialna <Stethoscope size={20} className="text-rose-500" />
              </h3>
          </div>
          
@@ -411,7 +411,7 @@ const StepAnalysis: React.FC<Props> = ({ results, items, onItemsUpdate, onReset,
                 <div className="bg-blue-50 p-4 rounded-xl border border-blue-100 text-xs text-blue-800">
                    <strong className="flex items-center gap-1 mb-1"><GraduationCap size={14}/>Dlaczego Test U Manna-Whitneya?</strong>
                    <p className="opacity-80 leading-relaxed">
-                     W psychologii klinicznej rozkłady wyników często nie są normalne (pacjenci mają skrajnie wysokie wyniki). Test U porównuje rangi, a nie średnie, co jest bezpieczniejsze statystycznie.
+                     "W psychologii klinicznej rozkłady wyników często nie są normalne (pacjenci mają skrajnie wysokie wyniki). Test U porównuje rangi, a nie średnie, co jest bezpieczniejsze statystycznie".
                    </p>
                 </div>
             </div>
@@ -450,7 +450,7 @@ const StepAnalysis: React.FC<Props> = ({ results, items, onItemsUpdate, onReset,
                 </div>
                 <div className="mt-4 p-3 bg-slate-50 rounded border border-slate-100 text-[10px] text-slate-600 leading-tight">
                     <strong className="block mb-1">Czym jest CFA?</strong>
-                    Konfirmacyjna Analiza Czynnikowa sprawdza, czy struktura danych pasuje do Twojej teorii (Modelu). Jeśli RMSEA > 0.08, model źle opisuje rzeczywistość.
+                    "Konfirmacyjna Analiza Czynnikowa sprawdza, czy struktura danych pasuje do Twojej teorii (Modelu). Jeśli RMSEA > 0.08, model źle opisuje rzeczywistość".
                 </div>
              </div>
 
@@ -490,7 +490,7 @@ const StepAnalysis: React.FC<Props> = ({ results, items, onItemsUpdate, onReset,
                 <div className="grid grid-cols-2 gap-4 text-xs border-t border-slate-100 pt-4">
                     <div>
                        <div className="flex items-center gap-2 mb-1 font-bold text-emerald-700">
-                          <div className="w-3 h-3 bg-emerald-500 rounded-sm"></div> Trafność Zbieżna
+                          <div className="w-3 h-3 bg-emerald-500 rounded-sm"></div> Trafność zbieżna
                        </div>
                        <p className="text-slate-500 mb-1">Oczekujemy <strong>wysokiej</strong> korelacji (&gt;0.5) z testami mierzącymi to samo.</p>
                        <div className="flex justify-between bg-emerald-50 p-2 rounded border border-emerald-100">
@@ -500,7 +500,7 @@ const StepAnalysis: React.FC<Props> = ({ results, items, onItemsUpdate, onReset,
                     </div>
                     <div>
                        <div className="flex items-center gap-2 mb-1 font-bold text-rose-700">
-                          <div className="w-3 h-3 bg-rose-500 rounded-sm"></div> Trafność Różnicowa
+                          <div className="w-3 h-3 bg-rose-500 rounded-sm"></div> Trafność różnicowa
                        </div>
                        <p className="text-slate-500 mb-1">Oczekujemy <strong>niskiej</strong> korelacji (&lt;0.3) z innymi cechami.</p>
                        <div className="flex justify-between bg-rose-50 p-2 rounded border border-rose-100">
@@ -564,7 +564,7 @@ const StepAnalysis: React.FC<Props> = ({ results, items, onItemsUpdate, onReset,
 
       {/* 4. CHARTS & ITEM STATS */}
       <section className="border-t border-slate-200 pt-8">
-         <h3 className="text-lg font-bold text-slate-800 mb-4">4. Statystyki Pozycji (IRT & CTT)</h3>
+         <h3 className="text-lg font-bold text-slate-800 mb-4">4. Statystyki pozycji (IRT & CTT)</h3>
          <div className="grid md:grid-cols-2 gap-6 mb-6">
            {/* Item Analysis Chart */}
            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
@@ -587,7 +587,7 @@ const StepAnalysis: React.FC<Props> = ({ results, items, onItemsUpdate, onReset,
           {/* TIF Chart */}
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
               <div className="flex justify-between items-center mb-4">
-                 <h3 className="text-sm font-bold text-slate-500 uppercase">Funkcja Informacyjna (IRT)</h3>
+                 <h3 className="text-sm font-bold text-slate-500 uppercase">Funkcja informacyjna (IRT)</h3>
                  <div className="group relative">
                     <BookOpen size={14} className="text-slate-400 cursor-help" />
                     <div className="absolute right-0 w-48 bg-slate-800 text-white text-[10px] p-2 rounded shadow-lg hidden group-hover:block z-10">
