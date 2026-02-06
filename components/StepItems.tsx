@@ -49,7 +49,7 @@ const StepItems: React.FC<Props> = ({ construct, items, setItems, onNext, onBack
       setJudgesRating({
         wKendall: parseFloat(w.toFixed(2)),
         comment: w > 0.8 
-          ? "Wysoka zgodność sędziów (W &gt; 0.8). Sędziowie są zgodni, że pytania dobrze reprezentują konstrukt." 
+          ? "Wysoka zgodność sędziów (W > 0.8). Sędziowie są zgodni, że pytania dobrze reprezentują konstrukt." 
           : "Umiarkowana zgodność sędziów. Część pytań może być niejasna lub wieloznaczna. Warto je doprecyzować."
       });
       setLoading(false);
