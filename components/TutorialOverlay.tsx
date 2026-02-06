@@ -37,7 +37,7 @@ const TutorialOverlay: React.FC<Props> = ({ step, onClose }) => {
       // Analysis
       title: "4. Analiza i Diagnoza Kliniczna",
       text: "To serce procesu. Sprawdzamy nie tylko rzetelność (Alfa), ale przede wszystkim trafność kliniczną. Używamy testu U Manna-Whitneya, by potwierdzić, czy osoby z zaburzeniem mają istotnie wyższe wyniki niż zdrowi.",
-      proTip: "Istotność statystyczna (p < 0.05) to nie wszystko. Liczy się wielkość efektu (d-Cohena). Jeśli efekt jest mały, test nie nadaje się do diagnozy indywidualnej, mimo że 'działa' statystycznie.",
+      proTip: "Istotność statystyczna (p &lt; 0.05) to nie wszystko. Liczy się wielkość efektu (d-Cohena). Jeśli efekt jest mały, test nie nadaje się do diagnozy indywidualnej, mimo że 'działa' statystycznie.",
       icon: <Stethoscope size={48} className="text-rose-500" />,
       color: "bg-rose-50 border-rose-100"
     },
