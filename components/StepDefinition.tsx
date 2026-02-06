@@ -125,8 +125,8 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
         description: "Stała tendencja do dostrzegania i doceniania pozytywnych aspektów życia oraz dobra otrzymywanego od innych ludzi."
       },
       {
-        name: "Bycie jak Baśka",
-        description: "tendencja do ... i ... aspektów oraz ... do ..., a także ..., czy ...."
+        name: "Zdolność do adaptacji",
+        description: "Umiejętność dostosowywania się do zmieniających się warunków i wymagań otoczenia, elastyczność poznawcza i behawioralna w obliczu nowych sytuacji."
       }
     ];
 
@@ -161,7 +161,7 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
                 className="text-xs flex items-center gap-1 text-indigo-600 hover:text-indigo-800 font-medium transition-colors bg-indigo-50 px-2 py-1 rounded-md border border-indigo-100 hover:bg-indigo-100"
                 title="Wypełnij losowym przykładem"
               >
-                <Sparkles size={12} /> Zaproponuj ({25} opcji)
+                <Sparkles size={12} /> Zaproponuj ({24} opcji)
               </button>
             </div>
             <input
