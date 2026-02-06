@@ -4,8 +4,8 @@ import { GoogleGenAI, Type } from "@google/genai";
 // Note: In a production environment, keys should be handled via a secure backend proxy.
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
 if (!apiKey) {
-  console.error("GEMINI_API_KEY is not set. Please add it to .env.local file.");
-  console.error("See README.md for instructions on how to set up your API key.");
+  console.error("VITE_GEMINI_API_KEY (or fallback GEMINI_API_KEY) is not set. Please add it to your .env/.env.local file.");
+  console.error("See README.md for instructions on how to set up your Gemini API key environment variable.");
 }
 
 const ai = new GoogleGenAI({ apiKey: apiKey || "" });
