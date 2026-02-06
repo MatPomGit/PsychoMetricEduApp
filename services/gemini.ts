@@ -5,7 +5,9 @@ import { GoogleGenAI, Type } from "@google/genai";
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
 if (!apiKey) {
   console.error("GEMINI_API_KEY is not set. Please add it to .env.local file.");
+  console.error("See README.md for instructions on how to set up your API key.");
 }
+
 const ai = new GoogleGenAI({ apiKey: apiKey || "" });
 
 const modelId = "gemini-2.5-flash";
