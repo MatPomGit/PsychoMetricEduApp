@@ -450,7 +450,7 @@ const StepAnalysis: React.FC<Props> = ({ results, items, onItemsUpdate, onReset,
                 </div>
                 <div className="mt-4 p-3 bg-slate-50 rounded border border-slate-100 text-[10px] text-slate-600 leading-tight">
                     <strong className="block mb-1">Czym jest CFA?</strong>
-                    "Konfirmacyjna Analiza Czynnikowa sprawdza, czy struktura danych pasuje do Twojej teorii (Modelu). Jeśli RMSEA > 0.08, model źle opisuje rzeczywistość".
+                    "Konfirmacyjna Analiza Czynnikowa sprawdza, czy struktura danych pasuje do Twojej teorii (Modelu). Jeśli RMSEA &gt; 0.08, model źle opisuje rzeczywistość".
                 </div>
              </div>
 

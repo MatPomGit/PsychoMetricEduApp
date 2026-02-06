@@ -13,7 +13,7 @@ const TutorialOverlay: React.FC<Props> = ({ step, onClose }) => {
       // Definition
       title: "1. Definicja Konstruktu",
       text: "Psychometria zaczyna się od teorii. Musisz zdefiniować 'co mierzymy'. Dobra definicja operacyjna pozwala przejść od abstrakcji (np. 'lęk') do konkretnych zachowań.",
-      proTip: "Unikaj definicji kołowych (tautologii). Nie definiuj lęku jako 'odczuwanie lęku', ale wskaż konkretne objawy: przyspieszone bicie serca, gonitwa myśli, unikanie kontaktu wzrokowego. Nie bądź jak Baśka.",
+      proTip: "Unikaj definicji kołowych (tautologii). Nie definiuj lęku jako 'odczuwanie lęku', ale wskaż konkretne objawy: przyspieszone bicie serca, gonitwa myśli, unikanie kontaktu wzrokowego.",
       icon: <Brain size={48} className="text-indigo-500" />,
       color: "bg-indigo-50 border-indigo-100"
     },
