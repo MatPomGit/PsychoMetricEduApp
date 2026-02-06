@@ -161,7 +161,7 @@ const StepDefinition: React.FC<Props> = ({ data, onUpdate, onNext }) => {
                 className="text-xs flex items-center gap-1 text-indigo-600 hover:text-indigo-800 font-medium transition-colors bg-indigo-50 px-2 py-1 rounded-md border border-indigo-100 hover:bg-indigo-100"
                 title="Wypełnij losowym przykładem"
               >
-                <Sparkles size={12} /> Zaproponuj ({26} opcji)
+                <Sparkles size={12} /> Zaproponuj ({examples.length} opcji)
               </button>
             </div>
             <input
